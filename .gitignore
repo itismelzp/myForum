@@ -1,0 +1,30 @@
+# Operating System Files
+*.DS_Store
+Thumbs.db
+*~
+.#*
+#*
+*#
+
+# Local backup
+*.bak
+
+# Build Files #
+bin
+target
+build/
+.gradle
+.idea
+
+# Eclipse Project Files #
+.classpath
+.project
+.settings
+.metadata*
+
+# IntelliJ IDEA Files #
+*.iml
+*.ipr
+*.iws
+*.idea
+*.log
