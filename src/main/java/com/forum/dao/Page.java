@@ -30,7 +30,7 @@ public class Page implements Serializable {
         this.data = data;
     }
 
-    public long getCurrentPageNO() {
+    public long getCurrentPageNo() {
         return start / pageSize + 1;
     }
 
@@ -69,14 +69,14 @@ public class Page implements Serializable {
      * 该页是否有下一页.
      */
     public boolean isHasNextPage() {
-        return getCurrentPageNO() < getTotalPageCount();
+        return getCurrentPageNo() < getTotalPageCount();
     }
 
     /**
      * 该页是否有上一页.
      */
-    public boolean isHasPreviewPage() {
-        return getCurrentPageNO() > 1;
+    public boolean isHasPreviousPage() {
+        return getCurrentPageNo() > 1;
     }
 
     public int getPageSize() {

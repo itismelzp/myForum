@@ -21,7 +21,7 @@ public class BaseDao<T> {
     private Class<T> entiryClass;
 
     @Autowired
-    private HibernateTemplate hibernateTemplate;
+    protected HibernateTemplate hibernateTemplate;
 
     public BaseDao() {
         Type genType = getClass().getGenericSuperclass();

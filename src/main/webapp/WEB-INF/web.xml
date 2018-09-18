@@ -5,7 +5,7 @@
 
     <!-- 覆盖default servlet的/, springmvc servlet将处理原来处理静态资源的映射 -->
     <description>我的论坛</description>
-    <display-name>xiaochun</display-name>
+    <display-name>myforum</display-name>
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:/applicationContext.xml</param-value>
@@ -70,12 +70,12 @@
         <url-pattern>*.jsp</url-pattern>
     </filter-mapping>
     <servlet>
-        <servlet-name>xiaochun</servlet-name>
+        <servlet-name>myforum</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <load-on-startup>3</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>xiaochun</servlet-name>
+        <servlet-name>myforum</servlet-name>
         <url-pattern>*.html</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
@@ -92,7 +92,7 @@
     </filter>
     <filter-mapping>
         <filter-name>HiddenHttpMethodFilter</filter-name>
-        <servlet-name>xiaochun</servlet-name>
+        <servlet-name>myforum</servlet-name>
     </filter-mapping>
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
